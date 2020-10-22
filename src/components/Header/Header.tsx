@@ -39,4 +39,4 @@ export const Header = () => {
       </AppBar>
     </div>
   );
-}
+};
