@@ -1,4 +1,7 @@
 version: 1
+env:
+  variables:
+    CI: true
 backend:
   phases:
     build:
@@ -11,6 +14,7 @@ frontend:
       commands:
         - yarn install
         - yarn lint
+        - yarn test
     build:
       commands:
         - yarn run build
