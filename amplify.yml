@@ -1,4 +1,7 @@
 version: 1
+env:
+  variables:
+    CI: true
 backend:
   phases:
     build:
