@@ -28,6 +28,7 @@ amplify/.config/local-*
 amplify/mock-data
 amplify/backend/amplify-meta.json
 amplify/backend/awscloudformation
+amplify/backend/api/amplifyworkshop/resolvers
 build/
 dist/
 node_modules/
