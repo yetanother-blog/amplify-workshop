@@ -1,6 +1,5 @@
-type Recipe @model @auth(rules: [{ allow: owner }]) {
+type Recipe @model @auth(rules: [{ allow: owner }]) @key(fields: ["owner", "id"]) {
   id: ID!
   title: String!
   content: String!
-  test: String!
 }
