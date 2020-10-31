@@ -28,6 +28,7 @@ amplify/.config/local-*
 amplify/mock-data
 amplify/backend/amplify-meta.json
 amplify/backend/awscloudformation
+amplify/backend/api/amplifyworkshop/resolvers
 build/
 dist/
 node_modules/
@@ -37,3 +38,7 @@ amplifyconfiguration.json
 amplify-build-config.json
 amplify-gradle-config.json
 amplifytools.xcconfig
+
+# auto-generated
+src/API.ts
+src/graphql
