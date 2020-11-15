@@ -14,7 +14,7 @@ frontend:
       commands:
         - yarn install
         - yarn lint
-        - yarn test
+        - yarn test --passWithNoTests
     build:
       commands:
         - yarn run build

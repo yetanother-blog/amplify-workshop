@@ -2,6 +2,7 @@ import React from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { AppBar, Button, Toolbar, Typography } from '@material-ui/core';
 import { Auth } from 'aws-amplify';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -31,6 +32,7 @@ export const Header = () => {
           <Typography variant="h6" className={classes.title}>
             Cookbook
           </Typography>
+          <Button component={Link} to="/create" color="inherit">New Recipe</Button>
           <Button color="inherit" onClick={signOut}>Sign out</Button>
         </Toolbar>
       </AppBar>

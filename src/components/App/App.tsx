@@ -9,23 +9,25 @@ import { LoadingSpinner } from '../LoadingSpinner/LoadingSpinner';
 import './App.css';
 
 const Home = lazy(() => import('../../routes/Home'));
+const CreateRecipe = lazy(() => import('../../routes/CreateRecipe'));
 const NotFound = lazy(() => import('../../routes/NotFound'));
 
 export const App = () => {
   return (
     <AmplifyAuthenticator>
-      <CssBaseline />
-      <Header />
-      <Box pt={2} component={Container}>
-        <Router>
+      <Router>
+        <CssBaseline />
+        <Header />
+        <Box pt={2} component={Container}>
           <Suspense fallback={<LoadingSpinner />}>
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/create" component={CreateRecipe} />
               <Route component={NotFound} />
             </Switch>
           </Suspense>
-        </Router>
-      </Box>
+        </Box>
+      </Router>
     </AmplifyAuthenticator>
   );
 };
