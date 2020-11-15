@@ -13,7 +13,7 @@ In the tutorial, we use [AWS Cloud9](https://aws.amazon.com/cloud9/) to keep the
 
 ### Setup CRA & Hosting
 
-1. Everything starts with the frontend. Let's boostrap [Create React App](https://reactjs.org/docs/create-a-new-react-app.html): `npx create-react-app amplify-workshop --template typescript`.
+1. Everything starts with the frontend. Let's boostrap [Create React App](https://reactjs.org/docs/create-a-new-react-app.html): `npx create-react-app amplify-for-beginners --template typescript`.
 2. Run `amplify configure` and set up the credentials.
 3. Now we can run `amplify init` to initialize the project. Keep everything as default settings.
 4. To deploy our application, we need to set up hosting. Run `amplify hosting add`. Choose the `Hosting with Amplify` option and select `Manual deployment`. Finally, run `amplify publish` to deploy the application for the first time.
